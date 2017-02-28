@@ -15,6 +15,8 @@
 		A02929A01E5AC20B00BD424A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A029299E1E5AC20B00BD424A /* LaunchScreen.storyboard */; };
 		A02929AB1E5AC20B00BD424A /* AnimationGatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A02929AA1E5AC20B00BD424A /* AnimationGatherTests.m */; };
 		A02929B61E5AC20B00BD424A /* AnimationGatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A02929B51E5AC20B00BD424A /* AnimationGatherUITests.m */; };
+		A05542291E651FA70022B3EE /* DatePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A05542181E651C200022B3EE /* DatePicker.framework */; };
+		A055422A1E651FA70022B3EE /* DatePicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A05542181E651C200022B3EE /* DatePicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +34,49 @@
 			remoteGlobalIDString = A029298C1E5AC20B00BD424A;
 			remoteInfo = AnimationGather;
 		};
+		A05542151E651C200022B3EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A055420F1E651C1F0022B3EE /* 日期选择器.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0EB44E71E1D2BA000F7E004;
+			remoteInfo = "日期选择器";
+		};
+		A05542171E651C200022B3EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A055420F1E651C1F0022B3EE /* 日期选择器.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A05541E51E6519940022B3EE;
+			remoteInfo = DatePicker;
+		};
+		A05542191E651C200022B3EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A055420F1E651C1F0022B3EE /* 日期选择器.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A05541ED1E6519940022B3EE;
+			remoteInfo = DatePickerTests;
+		};
+		A055422B1E651FA70022B3EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A055420F1E651C1F0022B3EE /* 日期选择器.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A05541E41E6519940022B3EE;
+			remoteInfo = DatePicker;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A055422D1E651FA70022B3EE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A055422A1E651FA70022B3EE /* DatePicker.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A029298D1E5AC20B00BD424A /* AnimationGather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationGather.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +95,7 @@
 		A02929B11E5AC20B00BD424A /* AnimationGatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationGatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02929B51E5AC20B00BD424A /* AnimationGatherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationGatherUITests.m; sourceTree = "<group>"; };
 		A02929B71E5AC20B00BD424A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A055420F1E651C1F0022B3EE /* 日期选择器.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "日期选择器.xcodeproj"; path = "ZHDatePicker/日期选择器.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05542291E651FA70022B3EE /* DatePicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +127,7 @@
 		A02929841E5AC20A00BD424A = {
 			isa = PBXGroup;
 			children = (
+				A055420F1E651C1F0022B3EE /* 日期选择器.xcodeproj */,
 				A029298F1E5AC20B00BD424A /* AnimationGather */,
 				A02929A91E5AC20B00BD424A /* AnimationGatherTests */,
 				A02929B41E5AC20B00BD424A /* AnimationGatherUITests */,
@@ -140,6 +187,16 @@
 			path = AnimationGatherUITests;
 			sourceTree = "<group>";
 		};
+		A05542101E651C1F0022B3EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A05542161E651C200022B3EE /* 日期选择器.app */,
+				A05542181E651C200022B3EE /* DatePicker.framework */,
+				A055421A1E651C200022B3EE /* DatePickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,10 +207,12 @@
 				A02929891E5AC20B00BD424A /* Sources */,
 				A029298A1E5AC20B00BD424A /* Frameworks */,
 				A029298B1E5AC20B00BD424A /* Resources */,
+				A055422D1E651FA70022B3EE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A055422C1E651FA70022B3EE /* PBXTargetDependency */,
 			);
 			name = AnimationGather;
 			productName = AnimationGather;
@@ -235,6 +294,12 @@
 			mainGroup = A02929841E5AC20A00BD424A;
 			productRefGroup = A029298E1E5AC20B00BD424A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A05542101E651C1F0022B3EE /* Products */;
+					ProjectRef = A055420F1E651C1F0022B3EE /* 日期选择器.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A029298C1E5AC20B00BD424A /* AnimationGather */,
@@ -243,6 +308,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A05542161E651C200022B3EE /* 日期选择器.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "日期选择器.app";
+			remoteRef = A05542151E651C200022B3EE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A05542181E651C200022B3EE /* DatePicker.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DatePicker.framework;
+			remoteRef = A05542171E651C200022B3EE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A055421A1E651C200022B3EE /* DatePickerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DatePickerTests.xctest;
+			remoteRef = A05542191E651C200022B3EE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A029298B1E5AC20B00BD424A /* Resources */ = {
@@ -310,6 +399,11 @@
 			isa = PBXTargetDependency;
 			target = A029298C1E5AC20B00BD424A /* AnimationGather */;
 			targetProxy = A02929B21E5AC20B00BD424A /* PBXContainerItemProxy */;
+		};
+		A055422C1E651FA70022B3EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DatePicker;
+			targetProxy = A055422B1E651FA70022B3EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -516,6 +610,7 @@
 				A02929BC1E5AC20B00BD424A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A02929BD1E5AC20B00BD424A /* Build configuration list for PBXNativeTarget "AnimationGatherTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +619,7 @@
 				A02929BF1E5AC20B00BD424A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A02929C01E5AC20B00BD424A /* Build configuration list for PBXNativeTarget "AnimationGatherUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +628,7 @@
 				A02929C21E5AC20B00BD424A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
